@@ -16,8 +16,15 @@ express()
     await page.setViewport({ width: 600, height: 800 });
     await page.goto(process.env.SCREENSHOT_URL || 'https://darksky.net/details/40.7127,-74.0059/2021-1-6/us12/en');
     await page.evaluate(() => {
-      document.querySelector("#banner").remove()
-      document.querySelector("section:nth-child(0)").remove()
+      if(document.querySelector("#banner")){
+        document.querySelector("#banner").remove()
+      }
+      if(document.querySelector("section:nth-child(1)")){
+        document.querySelector("section:nth-child(1)").remove()
+      }
+      if(document.querySelector("#header")){
+        document.querySelector("#header").remove()
+      }
     });
     await page.screenshot({
       path: '/tmp/screenshot.png',
