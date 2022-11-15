@@ -31,6 +31,9 @@ express()
       document.querySelectorAll("#currentDetails > div").forEach(function(item) {
         item.style.margin = '0'
       });
+      document.querySelectorAll("#currentDetails .label").forEach(function(item) {
+        item.style.margin = '0'
+      });
       if(document.querySelector("#week")){
         document.querySelector("#week").style.margin = '-30px 0 0 0'
       }
