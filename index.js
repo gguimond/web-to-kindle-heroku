@@ -25,8 +25,8 @@ express()
       if(document.querySelector("#header")){
         document.querySelector("#header").remove()
       }
-      if(document.querySelector("#map")){
-        document.querySelector("#map").remove()
+      if(document.querySelector("#map-container")){
+        document.querySelector("#map-container").remove()
       }
     });
     await page.screenshot({
