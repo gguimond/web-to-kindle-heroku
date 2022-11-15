@@ -29,10 +29,10 @@ express()
         document.querySelector("#map-container").remove()
       }
       document.querySelectorAll("#currentDetails > div").forEach(function(item) {
-        item.style.margin = '0 3px'
+        item.style.margin = '0'
       });
       if(document.querySelector("#week")){
-        document.querySelector("#week").style.margin = '-40px 0 0 0'
+        document.querySelector("#week").style.margin = '-30px 0 0 0'
       }
       if(document.querySelector("#week > .summary")){
         document.querySelector("#week > .summary").style.margin = '5px'
