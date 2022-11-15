@@ -25,6 +25,9 @@ express()
       if(document.querySelector("#header")){
         document.querySelector("#header").remove()
       }
+      if(document.querySelector("#map")){
+        document.querySelector("#map").remove()
+      }
     });
     await page.screenshot({
       path: '/tmp/screenshot.png',
