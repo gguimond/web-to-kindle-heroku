@@ -28,12 +28,18 @@ express()
       if(document.querySelector("#map-container")){
         document.querySelector("#map-container").remove()
       }
-      if(document.querySelector("#currentDetails")){
-        document.querySelector("#currentDetails > div").style.margin = '0 3px'
-      }
+      document.querySelectorAll("#currentDetails > div").forEach(function(item) {
+        item.style.margin = '0 3px'
+      });
       if(document.querySelector("#week")){
-        document.querySelector("#week").style.margin = '-20px 0 0 0'
+        document.querySelector("#week").style.margin = '-40px 0 0 0'
       }
+      if(document.querySelector("#week > .summary")){
+        document.querySelector("#week > .summary").style.margin = '5px'
+      }
+      document.querySelectorAll(".day").forEach(function(item) {
+        item.style.margin = '0 auto 12px'
+      });
     });
     await page.screenshot({
       path: '/tmp/screenshot.png',
