@@ -13,7 +13,7 @@
   "env": {
     "SCREENSHOT_URL": {
       "description": "The URL to take a screenshot of. Of which to take a screenshot? Whatever, you get it",
-      "value": "https://darksky.net/details/40.7127,-74.0059/2021-1-6/us12/en"
+      "value": "https://www.lameteoagricole.net/meteo-heure-par-heure/Caen-14000-j1.html"
     }
   }
 }
